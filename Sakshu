@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sakshi 🎂</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+}
+
+.slide {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.card {
+  width: 90%;
+  max-width: 700px;
+  padding: 55px 25px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  animation: zoom 2s ease;
+}
+
+.cake {
+  font-size: 75px;
+  animation: bounce 1.5s infinite;
+}
+
+h1 {
+  margin: 20px 0 10px;
+  font-size: clamp(40px, 8vw, 75px);
+  color: #4e0505;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.25);
+}
+
+h2 {
+  color: #fff;
+  font-size: clamp(22px, 4vw, 35px);
+  margin-bottom: 20px;
+}
+
+p {
+  color: #ced7c4;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.heart {
+  font-size: 30px;
+  margin-top: 25px;
+  animation: heart 1s infinite;
+}
+
+.balloon {
+  position: absolute;
+  font-size: 55px;
+  animation: float 5s infinite ease-in-out;
+}
+
+.b1 { left: 5%; top: 15%; }
+.b2 { right: 6%; top: 20%; animation-delay: 1s; }
+.b3 { left: 12%; bottom: 10%; animation-delay: 2s; }
+.b4 { right: 12%; bottom: 12%; animation-delay: 3s; }
+
+@keyframes zoom {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes heart {
+  50% { transform: scale(1.3); }
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-40px) rotate(5deg); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="slide">
+
+  <div class="balloon b1">🎈</div>
+  <div class="balloon b2">🎈</div>
+  <div class="balloon b3">🎈</div>
+  <div class="balloon b4">🎈</div>
+
+  <div class="card">
+
+    <div class="cake">🎂</div>
+
+    <h1>Happy Birthday</h1>
+
+    <h2>✨ Sakshi ✨</h2>
+
+    <p>
+      Wishing you a day filled with happiness,<br>
+      laughter, love and beautiful memories! 💖
+    </p>
+
+    <div class="heart">
+      💕 🎉 🎁 💕
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
